@@ -7,7 +7,7 @@ function Card({course, likedCourses, setLikedCourses}) {
   function likeHandler(){
     if(likedCourses.includes(course.id)){
       setLikedCourses((prev) => prev.filter((id) => (id !== course.id)))
-      toast.error('Removed from liked courses')
+      toast.succes('Removed from liked courses')
     }
     else{
       if(likedCourses.length === 0){
